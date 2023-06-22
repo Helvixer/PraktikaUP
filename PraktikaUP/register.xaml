@@ -1,0 +1,19 @@
+﻿<Window x:Class="PraktikaUP.register"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PraktikaUP"
+        mc:Ignorable="d"
+        Background="#FF5B76D8"
+        Title="register" Height="308.606" Width="279.918">
+    <Grid>
+        <TextBox x:Name="login" Width="250" Height="30" VerticalAlignment="Top" Margin="0,25"/>
+        <Label Content="Логин" Foreground="White" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="8,0"/>
+        <PasswordBox x:Name="password" Width="250" Height="30" VerticalAlignment="Top" Margin="0,80"/>
+        <Label Content="Пароль" Foreground="White" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="8,55"/>
+        <PasswordBox x:Name="password_1" Width="250" Height="30" VerticalAlignment="Bottom" Margin="0,112"/>
+        <Label Content="Повторите пароль" Foreground="White" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="8,105"/>
+        <Button x:Name="register" Content="Зарегестрироваться" Height="40" Width="150" VerticalAlignment="Bottom" Background="#ff304282" Foreground="White" HorizontalAlignment="Center" Margin="0,50"/>
+    </Grid>
+</Window>

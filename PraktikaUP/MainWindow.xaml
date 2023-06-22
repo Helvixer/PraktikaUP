@@ -4,12 +4,18 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PraktikaUP"
+        
         mc:Ignorable="d"
-        Title="MainWindow" Height="330" Width="280">
+        Title="MainWindow" Height="330" Width="280" ResizeMode="NoResize">
     <Grid OpacityMask="#FF5B76D8" Background="#FF5B76D8">
-        <TextBox HorizontalAlignment="Left" Height="24" Margin="22,111,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="221"/>
-        <TextBox HorizontalAlignment="Left" Height="24" Margin="22,174,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="221"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="97,247,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+        <TextBox x:Name="login" HorizontalAlignment="Left" Height="24" Margin="22,111,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="221"/>
+        <Button x:Name="login_b" VerticalAlignment="Bottom" Margin="0,37" Width="99" Click="Button_Click" Height="37" HorizontalAlignment="Center" Content="Войти" Background="#ff304282" Foreground="White"/>
+        <TextBlock HorizontalAlignment="Left" Margin="40,48,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" FontWeight="Bold" FontSize="20" Width="203" RenderTransformOrigin="0.5,0.5"><Run Text="Войдите в аккаунт"/></TextBlock>
+        <PasswordBox x:Name="password" Width="221" Height="24"  HorizontalAlignment="Left" VerticalAlignment="Top" Margin="22,157,0,0"/>
+        <Label Content="Логин:" Foreground="White" HorizontalAlignment="Left" Margin="22,85,0,0" VerticalAlignment="Top"/>
+        <Label Content="Пароль:" Foreground="White" HorizontalAlignment="Left" Margin="22,135,0,0" VerticalAlignment="Top"/>
+        <TextBlock x:Name="register" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Регистрация" Foreground="White" VerticalAlignment="Bottom" Margin="15" TextDecorations="Underline" PreviewMouseDown="register_PreviewMouseDown"/>
+
 
     </Grid>
 </Window>
